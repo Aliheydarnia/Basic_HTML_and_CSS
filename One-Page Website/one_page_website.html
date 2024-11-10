@@ -3,13 +3,78 @@
     <head>
         <title>Smart Phone</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./CSS/one_page_website.css">
+        <script src="/JS/one_page_website.js"></script>
         <h1>Technology</h1>
         <p>Smart Phone</p>
     </head>
+    
     <body>
-        <h4>Latest google smartphone products</h4>
-        <img src="pixel.jpeg"></body><br>
+        <h4>Google Pixel 9 : Camera quality </h4>
+        <!-- Images used for lightbox -->
+        <div class="row">
+            <div class="column">
+              <img src="images/plant1-small.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="">
+            </div>
+            <div class="column">
+              <img src="images/plant2-small.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="">
+            </div>
+            <div class="column">
+              <img src="images/plant3-small.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="">
+            </div>
+            <div class="column">
+              <img src="images/plant4-small.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="">
+            </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/plant1.png" style="width:100%" alt="">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/plant2.png" style="width:100%" alt="">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/plant3.png" style="width:100%" alt="">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/plant4.png" style="width:100%" alt="">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="images/plant1.png" style="width:100%" onclick="currentSlide(1)" alt="Camera quality 1">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/plant2.png" style="width:100%" onclick="currentSlide(2)" alt="Camera quality 2">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/plant3.png" style="width:100%" onclick="currentSlide(3)" alt="Camera quality 3">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/plant4.png" style="width:100%" onclick="currentSlide(4)" alt="Camera quality 4">
+              </div>
+            </div>
+          </div>
+        <img src="pixel.jpeg" alt=""></body><br>
         <br><strong>For more information please fill the form</strong>
         <div class="information">
         <form action="" method="get">
@@ -36,7 +101,6 @@
 
         <!--footer-->
         <div>www.google.com &nbsp;|&nbsp; &copy;2024</div>
-        
     </body>
 
 </html>
